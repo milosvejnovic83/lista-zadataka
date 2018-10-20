@@ -1,0 +1,32 @@
+<div class="navbar">
+  <a class="labela">LISTA ZADATAKA</a>
+  <a class="brojaci">Ispunjeni zadaci: <input class="semafor" disabled="true" value="{{count}}"></a>
+  <a class="brojaci">Neispunjeni zadaci: <input class="semafor" disabled="true" value="{{no}}"></a>
+</div>
+<div>
+  <h2 class="naslov">LISTA: </h2>
+  <table class="tabela" >       
+    <tr *ngFor="let task of tasks">
+      <td style="width: 15px;"><input type="checkbox" [checked]="task.check" [(ngModel)]="task.check" (ngModelChange)="changed()"></td>
+      <td style="width: 350px;">{{ task.taskName }}</td>
+      <td>{{ task.taskTask }}</td>
+    </tr>
+  </table>
+  <div>
+  </div>
+  <div>
+  <h2 class="naslov">DODAJ ZADATAK: </h2>
+  <label class="labelaaa">Naziv zadatka:
+    <input #taskName />
+  </label>
+  <label class="labelaaa">Zadatak:
+    <input #taskTask />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button class="labelaaa" (click)="add(taskName.value, taskTask.value); taskName.value=''; taskTask.value=''">
+      +
+  </button>
+  </div>
+</div>
+
+

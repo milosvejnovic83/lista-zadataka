@@ -1,0 +1,60 @@
+.navbar {
+    overflow: hidden;
+    background-color: green;
+  }
+  
+.navbar a {
+    color: yellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.labela {
+    float: left;
+    font-size: 25px;
+}
+
+.labelaaa {
+    color:green;
+    margin-left: 5px;
+}
+
+.brojaci {
+    float: right;
+    margin-top: 4px;
+    font-size: 17px;
+}
+
+.semafor {
+    color: green;
+    width: 50px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.naslov {
+    color: green;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.tabela {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabela td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tabela tr:nth-child(odd) {
+    background-color: green;
+    color:yellow;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: yellow;
+    color:green;
+}
